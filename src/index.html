@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Hackathon - Dharini</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Container width define-->
+    <section class="w-[1180px] m-5">
+        <section class="flex gap-0">
+            <!-- LEFT MOST SECTION NAV BAR -->
+            <div class="w-[220px]">
+                <!-- Left Dropdown -->
+                <div class="border border-b-0 border-gray-400 rounded-tl-xl">
+                    <select name="account" id="account" class="p-2 m-2 rounded-lg border-2 border-gray-500">
+                        <option value="">Alicia Koch</option>
+                        <option value="vercel">alicia@example.com</option>
+                        <option value="gmail">alicia@gmail.com</option>
+                        <option value="icloud">alicia@me.com</option>
+                    </select>
+                </div>
+                <!-- Menu bars - first set-->
+                <div class="p-2 border border-b-0 border-gray-400">
+                    <!-- Inbox -->
+                    <div class="flex justify-between mt-1 p-2 bg-black text-white rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                            <p>Inbox</p>
+                        </div>
+                        <p>128</p>
+                    </div>
+                    
+                    <!-- drafts -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path></svg>
+                            <p>Drafts</p>
+                        </div>
+                        <p>9</p>
+                    </div>
+                    <!-- sent -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+                            <p>Sent</p>
+                        </div>
+                    </div>
+                    <!-- junk -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="m9.5 17 5-5"></path><path d="m9.5 12 5 5"></path></svg>
+                            <p>Junk</p>
+                        </div>
+                        <p>23</p>
+                    </div>
+                    <!-- trash -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></svg>
+                            <p>Trash</p>
+                        </div>
+                    </div>
+                    <!-- archive -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="M10 12h4"></path></svg>
+                            <p>Archive</p>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Menu bars - second set-->
+
+                <div class="p-2 border border-gray-400">
+                    <!-- social -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 21a8 8 0 0 0-16 0"></path><circle cx="10" cy="8" r="5"></circle><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path></svg>
+                            <p>Social</p>
+                        </div>
+                        <p>972</p>
+                    </div>
+                    
+                    <!-- updates -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                            <p>Updates</p>
+                        </div>
+                        <p>342</p>
+                    </div>
+                    <!-- forums -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2z"></path><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path></svg>
+                            <p>Forums</p>
+                        </div>
+                        <p>128</p>
+                    </div>
+                    <!-- shopping -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                            <p>Shopping</p>
+                        </div>
+                        <p>8</p>
+                    </div>
+                    <!-- promotions -->
+                    <div class="flex justify-between mt-1 p-2 hover:bg-gray-100 rounded-md">
+                        <div class="flex gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="5" r="1"></circle><circle cx="9" cy="19" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="5" r="1"></circle><circle cx="15" cy="19" r="1"></circle></svg>
+                            <p>Promotions</p>
+                        </div>
+                        <p>21</p>
+                    </div>  
+                </div>             
+            </div>
+
+            <!-- MIDDLE SECTION INBOX -->
+             <div>
+                <!-- top-inbox-header -->
+                <div class="w-[400px] h-[60px] border-l-0 border border-gray-400 flex justify-between px-3 items-center">
+                    <h3 class="text-2xl font-bold">Inbox</h3>
+                    <div class="p-[6px] bg-gray-300 rounded-md flex gap-4 items-center">
+                        <button class="active:bg-white px-2 rounded-md after:bg-white">All mail</button>
+                        <button class="active:bg-white px-2 rounded-md">Unread</button>
+                    </div>
+                </div>
+             </div>
+        </section>    
+
+
+
+    </section>
+</body>
+</html>
